@@ -1,0 +1,77 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <section>
+        <div class="background"></div>
+        <div class="name">Hugo Gehl</div>
+        <a href="/About/index"><div class="about" data-cursor="">À propos</div></a>
+        <div id="cursor" class="cursor"></div>
+    </section>
+
+    <nav class="menuBouton" id="myBtnContainer">
+        <ul>
+            <li><button data-filter="*" data-cursor="" class="btn active">Tout</button></li>
+            <li><button data-filter="affiches" data-cursor="" class="btn">Affiches</button></li>
+            <li><button data-filter="illustrations" data-cursor="" class="btn">Illustrations</button></li>
+            <li><button data-filter="editions" data-cursor="" class="btn">Éditions</button></li>
+            <li><button data-filter="evenementiels" data-cursor="" class="btn">Évènementiels</button></li>
+            <li><button data-filter="projetsPerso" data-cursor="" class="btn">Projets Personnel</button></li>
+            <li><button data-filter="impressions" data-cursor="" class="btn">Impressions</button></li>
+            <li><button data-filter="typographies" data-cursor="" class="btn">Typographies</button></li>
+            <li><button data-filter="motionsDesign" data-cursor="" class="btn" >Motions Design</button></li>
+            <li><button data-filter="codes" data-cursor="" class="btn">Codes</button></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <div class="projetsListe">
+            <a href="/Diabete/index">
+                <div data-cat="editions" id="diabete" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Artoop/index">
+                <div data-cat="evenementiels affiches editions" id="artoop" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/EtoilesTerrestre/index">
+                <div data-cat="affiches evenementiels" id="etoilesTerrestre" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Cira/index">
+                <div data-cat="editions" id="cira" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Workshop/index">
+                <div data-cat="editions" id="workshop" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Fanzine/index">
+                <div data-cat="editions impressions illustrations" id="fanzine" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Flux/index">
+                <div data-cat="editions impressions illustrations" id="flux" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/WorldsCocktails/index">
+                <div data-cat="motionsDesign" id="worldsCocktails" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/PopIcons/index">
+                <div data-cat="editions" id="popIcons" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Tdf/index">
+                <div data-cat="projetsPerso" id="tdf" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/LichtMehrLicht/index">
+                <div data-cat="illustrations" id="lichtMehrLicht" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Serigraphies/index">
+                <div data-cat="impressions editions affiches" id="serigraphies" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/SpecimenTypo/index">
+                <div data-cat="impressions editions affiches codes" id="specimenTypo" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/TypoG/index">
+                <div data-cat="affiches typographies" id="typoG" class="filterDiv" data-cursor=""></div>
+            </a>
+            <a href="/Damasio/index">
+                <div data-cat="editions" id="damasio" class="filterDiv" data-cursor=""></div>
+            </a>
+        </div>
+    </section>
+
+{% endblock %}
