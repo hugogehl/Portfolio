@@ -2,4 +2,31 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="workshop">
+            <h1 class="pagesTitre">Workshop</h1>
+            <p class="pagesExplications">Notions&thinsp;: Coeur, journalisme.
+                <br><br>Demande&thinsp;: Lors d'un workshop nous avions le projet de laisser une trace à travers
+                une édition de tous les travaux réalisés pendant la semaine.
+                <br><br> Descriptifs&thinsp;: Avec une équipe de photographes, reportaires et graphistes,
+                nous avons réalisé un livre contenant un récapitulatif jour par jour de cet semaine.
+                Depuis la réception des sujet, en passant par les phases de recherches, jusqu'à la réalisation dans
+                l'espace du final de chaques groupes. On retrouve donc une trace avec des photographies et descriptifs
+                de tous ce qui a était fait durant cette semaine de workshop sur le thème du coeur.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoWorkshop in photoWorkshops %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/workshop/{{ photoWorkshop.name }}" alt="photo {{ photoWorkshop.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoWorkshopBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

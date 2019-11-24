@@ -2,11 +2,11 @@
 
 {% block content %}
 
-    <section class="slide" data-active-project="">
+    <section class="page" data-active-project="">
         <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
         <div class="sidenav" data-project="artoop">
-            <h1 class="PagesTitre">Artoop</h1>
-            <p class="PagesExplications">Notions&thinsp;: Street art, expositions.
+            <h1 class="pagesTitre">Artoop</h1>
+            <p class="pagesExplications">Notions&thinsp;: Street art, expositions.
                 <br><br>Demande&thinsp;: Réaliser la communication visuel d'une galerie d'art qui s'implenterait
                 au sein de la COOP lors de sa réhabilitation.
                 <br><br>Descriptif&thinsp;: Projet de diplôme fictif pour mon BTS.
@@ -18,12 +18,14 @@
                 à la bombe. Les dégradés de couleurs vives sont également  typique des couleurs que l’on peut obtenir
                 à l’aide d’une bombe de peinture. </p>
             <div class="containerPages">
-                <ul class="PagesListe">
-                    <li data-cursor="" class="filterDivPages one"></li>
-                    <li data-cursor="" class="filterDivPages two"></li>
-                    <li data-cursor="" class="filterDivPages three"></li>
-                    <li data-cursor="" class="filterDivPages four"></li>
-                    <li data-cursor="" class="filterDivPages five"></li>
+                <ul class="pagesListe">
+                    {% for photoArtoop in photoArtoops %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/artoop/{{ photoArtoop.name }}" alt="photo {{ photoArtoop.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="photoArtoopBlock"></div>

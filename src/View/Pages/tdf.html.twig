@@ -2,4 +2,25 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="tdf">
+            <h1 class="pagesTitre">Tour de France 2017</h1>
+            <p class="pagesExplications">Descriptif&thinsp;: Photographies réalisées lors de mon stage à la Mairie
+                de Longwy. Durant cette journée j’étais photographe pour la ville.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoTdf in photoTdfs %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/tdf/{{ photoTdf.name }}" alt="photo {{ photoTdf.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoTdfBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

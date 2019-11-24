@@ -2,4 +2,26 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="popIcons">
+            <h1 class="pagesTitre">Pop Icons</h1>
+            <p class="pagesExplications">Notions&thinsp;: Exubérance, musique, pop culture.
+                <br><br>Demande&thinsp;: Réalisation d’un magazine autour de la pop culture, de ses stars et de l’exubérance.
+                <br><br>Descriptif&thinsp;: Travail de mise en page et traitements graphique sur un papier nacré.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoPopIcon in photoPopIcons %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/popIcons/{{ photoPopIcon.name }}" alt="photo {{ photoPopIcon.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoPopIconsBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

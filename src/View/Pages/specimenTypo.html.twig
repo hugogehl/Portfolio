@@ -2,4 +2,32 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="specimenTypo">
+            <h1 class="pagesTitre">Spécimen Typographique</h1>
+            <p class="pagesExplications">Notions&thinsp;: Code, spécimen typographique.
+                <br><br>Demande&thinsp;: Réalisation d'un spécimen typographique, en utilisant la découpeuse
+                graveuse laser.
+                <br><br>Descriptif&thinsp;: J'ai choisi de faire un spéciment typographique sur la typographie
+                Resistance de Velvetine. Le «&thinsp;i&thinsp;» minuscule est intéressant et mon projet est pensé
+                autour de lui, le format de mon affiche et du livret en découle. L'affiche a été entièrement réalisé
+                en code HTML et CSS. Ce code est le contenu de la petite édition accompagnant l'affiche. Les deux ont
+                été réalisé entièrement en découpe et gravure laser.
+                <br><br>L'affiche est inspirée du visuel de l'affiche de l'influx réalisé par graphéine.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoSpecimenTypo in photoSpecimenTypos %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/specimenTypo/{{ photoSpecimenTypo.name }}" alt="photo {{ photoSpecimenTypo.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoSpecTypoBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

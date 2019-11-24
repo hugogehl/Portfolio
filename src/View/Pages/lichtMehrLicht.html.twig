@@ -2,4 +2,27 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="lichtMehrLicht">
+            <h1 class="pagesTitre">Licht Mehr Licht</h1>
+            <p class="pagesExplications">Notions&thinsp;: Ombres et lumières, noir et blanc.
+                <br><br>Demande&thinsp;: Réalisations de planches de BD à partir de la sitation «&thinsp;Lumières plus de
+                lumières&thinsp;».<br><br>Descriptif&thinsp;: Dans un paysage post-apocalyptique l’héroine part de son village
+                vers la ville à la recherche de son oncle.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoLichtMehrLicht in photoLichtMehrLichts %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/lichtMehrLicht/{{ photoLichtMehrLicht.name }}" alt="photo {{ photoLichtMehrLicht.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoLichtMehrLichtBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

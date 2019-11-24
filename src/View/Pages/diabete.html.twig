@@ -2,4 +2,26 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="diabete">
+            <h1 class="pagesTitre">Mes premiers jours à l'école en tant que diabétique</h1>
+            <p class="pagesExplications">Notions&thinsp;:
+                <br><br>Demande&thinsp;:
+                <br><br>Descriptif&thinsp;:</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoDiabete in photoDiabetes %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/diabete/{{ photoDiabete.name }}" alt="photo {{ photoDiabete.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoDiabeteBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

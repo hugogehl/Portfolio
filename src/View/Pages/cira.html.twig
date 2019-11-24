@@ -2,4 +2,30 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="cira">
+            <h1 class="pagesTitre">CIRA</h1>
+            <p class="pagesExplications">Notions&thinsp;: Danse, livre objet.
+                <br><br>Demande&thinsp;: Réalisation d’une édition pour l’association le Cira (Strasbourg),
+                afin qu’ils puissent présenter leur association ainsi que leurs stages d’été
+                à leurs futurs actionnaires.
+                <br><br>Descriptif&thinsp;: Réalisation d'un système de pictogrammes symbolisant les différentes danses,
+                recensées dans un "nuancier" de formes. Ainsi que de deux carnets&thinsp;: un sur l’historique de
+                l’association, l’autre sur les différents intervenants des stages.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoCira in photoCiras %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/cira/{{ photoCira.name }}" alt="photo {{ photoCira.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoCiraBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

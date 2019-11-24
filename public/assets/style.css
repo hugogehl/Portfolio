@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background-color: white;
     /*cursor: none;*/
 }
 
@@ -18,14 +19,6 @@
     text-decoration: none;
     border-top: 1px solid white;
     margin-top: -1px;
-}
-
-#specimenTypo {
-    line-height: 11px;
-}
-
-#specimenTypo:hover {
-    line-height: 22px;
 }
 
 .filterDiv:hover {
@@ -58,63 +51,50 @@
     background-size: 160px;
 }
 
-#artoop {
-    background-image: url("https://hugogehl.github.io/website/images/dam_1.jpg");
-}
+#artoop {}
 
 #etoilesTerrestre {
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
+    background-image: url("../assets/images/etoilesTerr/etoiles_1.jpg");
 }
 
 #cira {
-    background-image: url("https://hugogehl.github.io/website/images/cira_9.jpg");
-}
-#workshop {
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
+    background-image: url("../assets/images/cira/cira_9.jpg");
 }
 
-#fanzine {
-    background-image: url("https://hugogehl.github.io/website/images/dam_1.jpg");
-}
+#workshop {}
 
-#flux {
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
-}
+#fanzine {}
+
+#flux {}
 
 #worldsCocktails {
     background-image: url("https://hugogehl.github.io/website/images/Worlds_cocktail_1.JPG");
 }
 
 #popIcons {
-    background-image: url("https://hugogehl.github.io/website/images/pop_1.jpg");
+    background-image: url("../assets/images/popIcons/pop_1.jpg");
 }
 
 #tdf {
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
+    background-image: url("../assets/images/tdf/tdf_1.jpg");
 }
 
 #lichtMehrLicht {
-    background-image: url("https://hugogehl.github.io/website/images/bd_1.jpg");
-}
-
-#serigraphies {
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
+    background-image: url("../assets/images/bd/bd_1.jpg");
 }
 
 #specimenTypo {
-    background-image: url("https://hugogehl.github.io/website/images/spec_1.jpg");
+    background-image: url("../assets/images/specTypo/spec_1.jpg");
 }
 
-#typoG {
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
-}
+#typoG {}
 
 #damasio {
-    background-image: url("https://hugogehl.github.io/website/images/dam_1.jpg");
+    background-image: url("../assets/images/damasio/dam_1.jpg");
 }
 
 #diabete {
-    background-image: url("https://hugogehl.github.io/website/images/Worlds_cocktail_1.JPG");
+    background-image: url("../assets/images/diabete/diab_9.jpg");
 }
 
 /* Fond site */
@@ -127,7 +107,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url("https://hugogehl.github.io/website/images/etoiles_1.jpg");
+    background-image: url("/assets/images/etoilesTerr/etoiles_1.jpg");
 }
 
 /* Menu_bouton */
@@ -176,6 +156,8 @@
 
 /* Header */
 .name {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
     position: absolute;
     color: white;
     right: 40px;
@@ -184,16 +166,8 @@
     z-index: 2;
 }
 
-.about {
-    position: absolute;
-    color: white;
-    right: 250px;
-    top: 41px;
-    font-size: 25px;
-    z-index: 1;
-}
 
-/*Slide header*/
+/*Page header*/
 .aboutTitre, .videoTitre {
     font-size: 40px;
     top: 30px;
@@ -219,12 +193,7 @@
     line-height: 30px;
 }
 
-.lienMail {
-    text-decoration: none;
-    color: black;
-}
-
-.lienInsta {
+.lienMail, .lienInsta {
     text-decoration: none;
     color: black;
 }
@@ -233,11 +202,14 @@
 .closebtn {
     position: absolute;
     top: 5px;
-    right: 10px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 50px;
+    font-size: 50px;
     color: black;
     text-decoration: none;
+}
+
+.imgPages {
+    width: 200px;
 }
 
 /* Contenu commun des Pages */
@@ -278,6 +250,139 @@
     z-index: 1;
 }
 
-.PagesListe {
+.pagesListe {
     display: flex;
+}
+
+.block {
+    height: 500px;
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+ /*Page block général */
+.photoEtoilesTerrBlock {
+    background-image: url("/assets/images/etoilesTerr/etoiles_1.jpg");
+}
+
+
+/* cursor */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Responsive */
+@media (min-width: 1025px) {
+    .block{
+        position: absolute;
+        top: 130px;
+        right: 40px;
+    }
+
+    .pagesTitre, .pagesExplications, .containerPages {
+        position: absolute;
+    }
+
+    .photoWorldsCocktailsBlock {
+        width: 60%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .pages {
+        overflow-y: auto;
+    }
+
+    .pagesExplications {
+        width: 70%;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .containerPages {
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .pages{
+        overflow-y: auto;
+    }
+
+    .pagesExplications {
+        width: 80%;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .containerPages {
+        padding-bottom: 10px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .filterDivPages {
+        width: 40px;
+    }
+
+    .filterDivPages:hover {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pages {
+        overflow-y: auto;
+    }
+
+    .pagesExplications {
+        width: 80%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .containerPages {
+        padding-bottom: 10px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .filterDivPages {
+        width: 40px;
+    }
+
+    .filterDivPages:hover {
+        width: 150px;
+    }
 }

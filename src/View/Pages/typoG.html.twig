@@ -2,4 +2,28 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="typoG">
+            <h1 class="pagesTitre">Typo G3</h1>
+            <p class="pagesExplications">Notions&thinsp;: Typographies, Piège à encre.
+                <br><br>Demande&thinsp;: Réaliser une typograhie et sa variante, en les travaillants
+                sur le logiciel glyphes.
+                <br><br>Descriptif&thinsp;: La variante de cette typographie s'inspire du principe de piège
+                à encre et où l'on vient jouer avec.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoTypo in photoTypos %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/typoG/{{ photoTypo.name }}" alt="photo {{ photoTypo.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoTypoGBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

@@ -2,4 +2,30 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="fanzine">
+            <h1 class="pagesTitre">Fanzine</h1>
+            <p class="pagesExplications">Notions&thinsp;: Bichromie, risographie, illustration spontanée.
+                <br><br>Demande&thinsp;: Lors d'un atelier risographie en groupe, chaque personne devait réaliser une
+                illustration, pour qu'une fois toute combinées de façon aléatoire, elles forment une édition.
+                <br><br>Descriptif&thinsp;: Nous avions le choix entre trois couleurs (jaune, bleu et orange) mais avions
+                la contrainte de la bichromie pour notre illustration. On a également tous pioché deux mots, comme par
+                exemple&thinsp;: humberger unijambiste, dinos mou ou encore clou fort, ces combinaisons de mots sont
+                la base de notre dessin.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoFanzine in photoFanzines %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/fanzine/{{ photoFanzine.name }}" alt="photo {{ photoFanzine.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoFanzineBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

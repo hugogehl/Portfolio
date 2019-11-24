@@ -2,4 +2,28 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="damasio">
+            <h1 class="pagesTitre">Damasio</h1>
+            <p class="pagesExplications">Notions&thinsp;: Reccueil de nouvelles, Transmissions, Messages.
+                <br><br>Demande&thinsp;: Réaliser une édition à partir du reccueil de nouvelles de Alain Damasio.
+                <br><br>Descriptif&thinsp;: Séléction de trois nouvelles autour du thème de la transmissions de messages,
+                qu'ils soient oraux, lumineux ou sonnore. Entre deux nouvelles, un dossier de photographies illustrants
+                les messages des nouvelles.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoDamasio in photoDamasios %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/damasio/{{ photoDamasio.name }}" alt="photo {{ photoDamasio.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoDamasioBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

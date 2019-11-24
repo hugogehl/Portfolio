@@ -2,4 +2,35 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav">
+            <h1 class="pagesTitre">Étoiles terrestre</h1>
+            <p class="pagesExplications">Notions&thinsp;: Verre, cristal, morphoses, reflets.
+                <br><br>Demande&thinsp;: Réaliser la communication visuel pour le Féstival Étoiles Terrestre organisé
+                par la cristallerie Saint-Louis, le site verrier de Meisenthal et le musée Lalique.
+                <br><br>Descriptif&thinsp;: En groupe de quatres nous sommes venu simuler le travail en agence, chacun
+                c'est occupé d'un pôle graphique (identité visuel, évènementiel, édition et signalétique).
+                Pour ma part je me suis occupé de l'évènementiel. Le principe de mes affiches est qu’il y a quatre
+                photos avec quatre cadres différents, une pour chaque évènements du festival (Projection, concert,
+                ateliers et expositions). Accompagné d’une affiche global du festival, pour venir donner
+                toute les informations !
+                <br>Il y a également un programme qui vient donner toutes les informations importantes et mettre
+                en valeur les productions des musées. Enfin quelques dérivés, un poster encarter dans le programme
+                ainsi que des sous bock.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoEtoile in photoEtoiles %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img class="imgPages" id="etoile{{ photoEtoile.id }}" src="/assets/images/etoilesTerr/{{ photoEtoile.name }}" alt="photo {{ photoEtoile.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoEtoilesTerrBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}

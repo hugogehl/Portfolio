@@ -7,12 +7,17 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="body">
+
+        <div id="cursor" class="cursor"></div>
 
         {% block content %}{% endblock %}
 
         {% block javascripts %}
+
             <script src="/assets/script.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
+
         {% endblock %}
 
     </body>

@@ -2,4 +2,30 @@
 
 {% block content %}
 
+    <section class="page" data-active-project="">
+        <a data-cursor="" href="/Home/index" class="closebtn">&times;</a>
+        <div class="sidenav" data-project="flux">
+            <h1 class="pagesTitre">Flux</h1>
+            <p class="pagesExplications">Notions&thinsp;: Flux, évolution, érosion.
+                <br><br>Demande&thinsp;: Réaliser une affiche récto/verso en sérigraphie.
+                <br><br>Descriptif&thinsp;: En groupe de huit nous avons chacun réaliser notre affiche, pour ensuite
+                les encarter ensemble et réaliser une édition dans laquelle chaque illustration répond à une autre.
+                L'intérêt est le dialogue entre deux illustrations qui n'étaient pas pensées pour être ensemble,
+                mais le sont et se répondent plus ou moins bien. C'est l'aléatoire de cette encartement
+                qui est intéressant.</p>
+            <div class="containerPages">
+                <ul class="pagesListe">
+                    {% for photoFlux in photoFluxs %}
+                        <li data-cursor="" class="filterDivPages">
+                            <img src="/assets/images/flux/{{ photoFlux.name }}" alt="photo {{ photoFlux.name }}">
+                        </li>
+                    {% else %}
+                        <tr><td colspan="5">Nothing to display</td></tr>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block photoFluxBlock"></div>
+        </div>
+    </section>
+
 {% endblock %}
