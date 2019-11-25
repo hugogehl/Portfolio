@@ -4,7 +4,7 @@
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     background-color: white;
-    /*cursor: none;*/
+    cursor: none;
 }
 
 /* Projets compressés barre */
@@ -107,7 +107,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url("/assets/images/etoilesTerr/etoiles_1.jpg");
+    background-image: url("../assets/images/etoilesTerr/etoiles_1.jpg");
 }
 
 /* Menu_bouton */
@@ -264,7 +264,7 @@
 
  /*Page block général */
 .photoEtoilesTerrBlock {
-    background-image: url("/assets/images/etoilesTerr/etoiles_1.jpg");
+    background-image: url("../assets/images/etoilesTerr/etoiles_1.jpg");
 }
 
 
