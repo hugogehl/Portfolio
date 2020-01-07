@@ -1,0 +1,898 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    cursor: none;
+}
+
+/* Projets compressés barre */
+.filterDiv {
+    color: rgba(255, 255, 255, 0.2);
+    background-color: black;
+    width: 160px;
+    height: 30px;
+    z-index: 1;
+    padding: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    border-top: 1px solid white;
+    margin-top: -1px;
+}
+
+.filterDiv:hover {
+    height: 100px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#specimen_typo {
+    line-height: 11px;
+}
+
+#specimen_typo:hover {
+    line-height: 22px;
+}
+
+.filterDiv:hover {
+    height: 100px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.show {
+    display: block;
+    z-index: 1;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    max-height: 700px;
+    z-index: 1;
+}
+
+.is-hidden {
+    display: none;
+}
+
+/*Projets compressés photos*/
+.projets_liste li  {
+    background-size: 160px;
+}
+
+#diabete {
+    background-image: url("images/diabete/diab_9.jpg");
+}
+
+/*#artoop {}*/
+
+#etoiles_terrestre {
+    background-image: url("images/etoilesTerr/etoiles_1.jpg");
+}
+
+#cira {
+    background-image: url("images/cira/cira_9.jpg");
+}
+
+#workshop {
+    background-image: url("images/workshop/workshop_1.jpg");
+}
+
+#flux {
+    background-image: url("images/flux/flux_1.jpeg");
+}
+
+#worlds_cocktails {
+    background-image: url("images/worldsCocktails/Worlds_cocktail_1.JPG");
+}
+
+#pop_icons {
+    background-image: url("images/popIcons/pop_1.jpg");
+}
+
+#tdf {
+    background-image: url("images/tdf/tdf_1.jpg");
+}
+
+#licht_mehr_licht {
+    background-image: url("images/bd/bd_1.jpg");
+}
+
+#specimen_typo {
+    background-image: url("images/specTypo/spec_1.jpg");
+}
+
+#typo_g {
+    background-image: url("images/typoG/typoG_1.jpg");
+}
+
+#damasio {
+    background-image: url("images/damasio/dam_1.jpg");
+}
+
+/* Fond site */
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("images/etoilesTerr/etoiles_1.jpg");
+}
+
+/* Menu_bouton */
+.btn {
+    position: relative;
+    top: 108px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px 0 0 0;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+
+.btn::before,
+.btn--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn::before {
+    opacity: 1;
+    transform: scale(0, 1);
+    transform-origin: top right;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-out;
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: top left;
+}
+
+.btn--current::after {
+    opacity: 0.125;
+}
+
+/* Header */
+.name {
+    position: absolute;
+    color: white;
+    right: 40px;
+    top: 33px;
+    font-size: 35px;
+    z-index: 2;
+}
+
+/*Slide header*/
+.about_titre, .video_titre {
+    font-size: 40px;
+    top: 30px;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+    max-width: 60%;
+}
+
+.about_explications, .video_explications {
+    display: block;
+    font-size: 20px;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.about_contact{
+    display: block;
+    font-size: 20px;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+    max-width: 70%;
+    line-height: 30px;
+}
+
+.lien_mail, .lien_insta {
+    text-decoration: none;
+    color: black;
+}
+
+/* Slide */
+.slide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+
+    transform: translate(100%, 0);
+    transition: transform 0.5s ease-out;
+}
+
+.is-open {
+    transform: translate(0);
+}
+
+.sidenav {
+    display: none;
+}
+
+[data-active-project="about"] [data-project="about"] {
+    display: block;
+}
+
+[data-active-project="diabete"] [data-project="diabete"] {
+    display: block;
+}
+
+[data-active-project="artoop"] [data-project="artoop"] {
+    display: block;
+}
+
+[data-active-project="etoiles_terrestre"] [data-project="etoiles_terrestre"] {
+    display: block;
+}
+
+[data-active-project="cira"] [data-project="cira"] {
+    display: block;
+}
+
+[data-active-project="workshop"] [data-project="workshop"] {
+    display: block;
+}
+
+[data-active-project="fanzine"] [data-project="fanzine"] {
+    display: block;
+}
+
+[data-active-project="flux"] [data-project="flux"] {
+    display: block;
+}
+
+[data-active-project="worlds_cocktails"] [data-project="worlds_cocktails"] {
+    display: block;
+}
+
+[data-active-project="pop_icons"] [data-project="pop_icons"] {
+    display: block;
+}
+
+[data-active-project="tdf"] [data-project="tdf"] {
+    display: block;
+}
+
+[data-active-project="licht_mehr_licht"] [data-project="licht_mehr_licht"] {
+    display: block;
+}
+
+[data-active-project="serigraphies"] [data-project="serigraphies"] {
+    display: block;
+}
+
+[data-active-project="specimen_typo"] [data-project="specimen_typo"] {
+    display: block;
+}
+
+[data-active-project="typo_g"] [data-project="typo_g"] {
+    display: block;
+}
+
+[data-active-project="damasio"] [data-project="damasio"] {
+    display: block;
+}
+
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+/* slide tous */
+.slide_titre {
+    font-size: 40px;
+    top: 30px;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+    max-width: 60%;
+}
+
+.slide_explications {
+    font-size: 20px;
+    top: 130px;
+    width: 45%;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+}
+
+.filterDiv_slide {
+    width: 50px;
+    height: 130px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: blue;
+    border: 1px solid white;
+}
+
+.filterDiv_slide:hover {
+    width: 200px;
+}
+
+.container_slide {
+    overflow: hidden;
+    bottom: 40px;
+    right: 40px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.slide_liste {
+    display: flex;
+}
+
+.slide_liste  li {
+    background-size: 200px;
+}
+
+.block {
+    height: 500px;
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.contourTypoG li {
+    border: 0.3px solid;
+}
+
+.contourWorkshop li:first-child {
+    border: 0.3px solid;
+}
+
+/* Slide diabete */
+.photo_diabete_block {
+    background-image: url("images/diabete/diab_1.jpg");
+}
+
+#photoone_diabete {
+    background-image: url("images/diabete/diab_1.jpg");
+}
+
+#phototwo_diabete {
+    background-image: url("images/diabete/diab_2.jpg");
+}
+
+#photothree_diabete {
+    background-image: url("images/diabete/diab_3.jpg");
+}
+
+#photofour_diabete {
+    background-image: url("images/diabete/diab_4.jpg");
+}
+
+#photofive_diabete {
+    background-image: url("images/diabete/diab_5.jpg");
+}
+
+#photosix_diabete {
+    background-image: url("images/diabete/diab_6.jpg");
+}
+
+#photoseven_diabete {
+    background-image: url("images/diabete/diab_7.jpg");
+}
+
+#photonine_diabete {
+    background-image: url("images/diabete/diab_9.jpg");
+}
+
+/* Slide workshop */
+.photo_workshop_block {
+    background-image: url("images/workshop/workshop_1.jpg");
+}
+
+#photoone_workshop {
+    background-image: url("images/workshop/workshop_1.jpg");
+}
+
+#phototwo_workshop {
+    background-image: url("images/workshop/workshop_2.jpeg");
+}
+
+#photothree_workshop {
+    background-image: url("images/workshop/workshop_3.jpeg");
+}
+
+#photofour_workshop {
+    background-image: url("images/workshop/workshop_4.jpeg");
+}
+
+#photofive_workshop {
+    background-image: url("images/workshop/workshop_5.jpeg");
+}
+
+/* Slide étoiles terr */
+.photo_etoiles_terr_block {
+    background-image: url("images/etoilesTerr/etoiles_1.jpg");
+}
+
+#photoone_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_1.jpg");
+}
+
+#phototwo_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_2.jpg");
+}
+
+#photothree_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_3.jpg");
+}
+
+#photofour_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_4.jpg");
+}
+
+#photofive_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_5.jpg");
+}
+
+#photosix_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_6.jpg");
+}
+
+#photoseven_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_7.jpg");
+}
+
+#photoeight_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_8.jpg");
+}
+
+#photonine_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_9.jpg");
+}
+
+#phototen_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_10.jpg");
+}
+
+#photoeleven_etoiles_terr {
+    background-image: url("images/etoilesTerr/etoiles_11.jpg");
+}
+
+/* Slide typoG */
+.photo_typo_g_block {
+    background-image: url("images/typoG/typoG_1.jpg");
+}
+
+#photoone_typo_g {
+    background-image: url("images/typoG/typoG_1.jpg");
+}
+
+#phototwo_typo_g {
+    background-image: url("images/typoG/typoG_2.jpg");
+}
+
+#photothree_typo_g {
+    background-image: url("images/typoG/typoG_3.jpg");
+}
+
+#photofour_typo_g {
+    background-image: url("images/typoG/typoG_4.jpg");
+}
+
+#photofive_typo_g {
+    background-image: url("images/typoG/typoG_5.jpg");
+}
+
+#photosix_typo_g {
+    background-image: url("images/typoG/typoG_6.jpg");
+}
+
+/* Slide cira */
+.photo_cira_block {
+    background-image: url("images/cira/cira_9.jpg");
+}
+
+#photoone_cira {
+    background-image: url("images/cira/cira_9.jpg");
+}
+
+#phototwo_cira {
+    background-image: url("images/cira/cira_1.jpg");
+}
+
+#photothree_cira {
+    background-image: url("images/cira/cira_2.jpg");
+}
+
+#photofour_cira {
+    background-image: url("images/cira/cira_3.jpg");
+}
+
+#photofive_cira {
+    background-image: url("images/cira/cira_4.jpg");
+}
+
+#photosix_cira {
+    background-image: url("images/cira/cira_5.jpg");
+}
+
+#photoseven_cira {
+    background-image: url("images/cira/cira_6.jpg");
+}
+
+#photoeight_cira {
+    background-image: url("images/cira/cira_7.jpg");
+}
+
+#photonine_cira {
+    background-image: url("images/cira/cira_8.jpg");
+}
+
+/* Slide Tdf */
+.photo_tdf_block {
+    background-image: url("images/tdf/tdf_1.jpg");
+}
+
+#photoone_tdf {
+    background-image: url("images/tdf/tdf_1.jpg");
+}
+
+#phototwo_tdf {
+    background-image: url("images/tdf/tdf_2.jpg");
+}
+
+#photothree_tdf {
+    background-image: url("images/tdf/tdf_3.jpg");
+}
+
+#photofour_tdf {
+    background-image: url("images/tdf/tdf_4.jpg");
+}
+
+#photofive_tdf {
+    background-image: url("images/tdf/tdf_5.jpg");
+}
+
+#photosix_tdf {
+    background-image: url("images/tdf/tdf_6.jpg");
+}
+
+/* Slide Flux */
+.photo_flux_block {
+    background-image: url("images/flux/flux_1.jpeg");
+}
+
+#photoone_flux {
+    background-image: url("images/flux/flux_1.jpeg");
+}
+
+#phototwo_flux {
+    background-image: url("images/flux/flux_2.jpeg");
+}
+
+#photothree_flux {
+    background-image: url("images/flux/flux_3.jpeg");
+}
+
+#photofour_flux {
+    background-image: url("images/flux/flux_4.jpg");
+}
+
+#photofive_flux {
+    background-image: url("images/flux/flux_5.jpeg");
+}
+
+/* world's cocktail */
+.photo_worlds_cocktails_block {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+}
+
+.video-container{
+    position: relative;
+    padding-top: 56%;
+    width: 100%;
+}
+
+.video{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* Slide pop icons */
+.photo_pop_icons_block {
+    background-image: url("images/popIcons/pop_1.jpg");
+}
+
+#photoone_pop_icons {
+    background-image: url("images/popIcons/pop_1.jpg");
+}
+
+#phototwo_pop_icons {
+    background-image: url("images/popIcons/pop_2.jpg");
+}
+
+#photothree_pop_icons {
+    background-image: url("images/popIcons/pop_3.jpg");
+}
+
+#photofour_pop_icons {
+    background-image: url("images/popIcons/pop_4.jpg");
+}
+
+#photofive_pop_icons {
+    background-image: url("images/popIcons/pop_5.jpg");
+}
+
+/* Slide licht mehr licht */
+.photo_licht_mehr_licht_block {
+    background-image: url("images/bd/bd_1.jpg");
+}
+
+#photoone_licht_mehr_licht {
+    background-image: url("images/bd/bd_1.jpg");
+}
+
+#phototwo_licht_mehr_licht {
+    background-image: url("images/bd/bd_2.jpg");
+}
+
+#photothree_licht_mehr_licht {
+    background-image: url("images/bd/bd_3.jpg");
+}
+
+#photofour_licht_mehr_licht {
+    background-image: url("images/bd/bd_4.jpg");
+}
+
+#photofive_licht_mehr_licht {
+    background-image: url("images/bd/bd_5.jpg");
+}
+
+#photosix_licht_mehr_licht {
+    background-image: url("images/bd/bd_6.jpg");
+}
+
+#photoseven_licht_mehr_licht {
+    background-image: url("images/bd/bd_7.jpg");
+}
+
+#photoeight_licht_mehr_licht {
+    background-image: url("images/bd/bd_8.jpg");
+}
+
+/* Slide spec typo */
+.photo_spec_typo_block {
+    background-image: url("images/specTypo/spec_1.jpg");
+}
+
+#photoone_spec_typo {
+    background-image: url("images/specTypo/spec_1.jpg");
+}
+
+#phototwo_spec_typo {
+    background-image: url("images/specTypo/spec_2.jpg");
+}
+
+#photothree_spec_typo {
+    background-image: url("images/specTypo/spec_3.jpg");
+}
+
+#photofour_spec_typo {
+    background-image: url("images/specTypo/spec_4.jpg");
+}
+
+#photofive_spec_typo {
+    background-image: url("images/specTypo/spec_5.jpg");
+}
+
+#photosix_spec_typo {
+    background-image: url("images/specTypo/spec_6.jpg");
+}
+
+#photoseven_spec_typo {
+    background-image: url("images/specTypo/spec_7.jpg");
+}
+
+#photoeight_spec_typo {
+    background-image: url("images/specTypo/spec_8.jpg");
+}
+
+#photonine_spec_typo {
+    background-image: url("images/specTypo/spec_9.jpg");
+}
+
+#phototen_spec_typo {
+    background-image: url("images/specTypo/spec_10.jpg");
+}
+
+#photoelewen_spec_typo {
+    background-image: url("images/specTypo/spec_11.jpg");
+}
+
+/* Slide damasio */
+.photo_damasio_block {
+    background-image: url("images/damasio/dam_1.jpg");
+}
+
+#photoone_damasio {
+    background-image: url("images/damasio/dam_1.jpg");
+}
+
+#phototwo_damasio {
+    background-image: url("images/damasio/dam_2.jpg");
+}
+
+#photothree_damasio {
+    background-image: url("images/damasio/dam_3.jpg");
+}
+
+#photofour_damasio {
+    background-image: url("images/damasio/dam_4.jpg");
+}
+
+#photofive_damasio {
+    background-image: url("images/damasio/dam_5.jpg");
+}
+
+#photosix_damasio {
+    background-image: url("images/damasio/dam_6.jpg");
+}
+
+#photoseven_damasio {
+    background-image: url("images/damasio/dam_7.jpg");
+}
+
+#photoeight_damasio {
+    background-image: url("images/damasio/dam_8.jpg");
+}
+
+#photonine_damasio {
+    background-image: url("images/damasio/dam_9.jpg");
+}
+
+/* cursor */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Responsive */
+@media (min-width: 1025px) {
+    .block{
+        position: absolute;
+        top: 130px;
+        right: 40px;
+    }
+
+    .slide_titre, .slide_explications, .container_slide {
+        position: absolute;
+    }
+
+    .photo_worlds_cocktails_block {
+        width: 60%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .slide{
+        overflow-y: auto;
+    }
+
+    .slide_explications {
+        width: 70%;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .container_slide {
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .slide{
+        overflow-y: auto;
+    }
+
+    .slide_explications {
+        width: 80%;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .container_slide {
+        padding-bottom: 10px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .filterDiv_slide{
+        width: 40px;
+    }
+
+    .filterDiv_slide:hover {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide{
+        overflow-y: auto;
+    }
+
+    .slide_explications {
+        width: 80%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .container_slide {
+        padding-bottom: 10px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .filterDiv_slide{
+        width: 40px;
+    }
+
+    .filterDiv_slide:hover {
+        width: 150px;
+    }
+}

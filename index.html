@@ -1,1 +1,360 @@
-<p>Portfolio en cours de finalisasion</p>
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Hugo Gehl</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <section>
+        <div class="bg"></div>
+        <div class="name" data-panel="about" data-cursor="">Hugo Gehl</div>
+        <div id="cursor" class="cursor"></div>
+    </section>
+
+    <nav class="menu_bouton" id="myBtnContainer">
+        <ul>
+            <li><button data-filter="*" data-cursor="" class="btn active"> Tout</button></li>
+            <li><button data-filter="affiches" data-cursor="" class="btn"> Affiches</button></li>
+            <li><button data-filter="illustrations" data-cursor="" class="btn"> Illustrations</button></li>
+            <li><button data-filter="editions" data-cursor="" class="btn"> Éditions</button></li>
+            <li><button data-filter="evenementiels" data-cursor="" class="btn"> Évènementiels</button></li>
+            <li><button data-filter="projets_perso" data-cursor="" class="btn"> Projets Personnels</button></li>
+            <li><button data-filter="impressions" data-cursor="" class="btn"> Impressions</button></li>
+            <li><button data-filter="typographies" data-cursor="" class="btn"> Typographies</button></li>
+            <li><button data-filter="motions_design" data-cursor="" class="btn" > Motions Design</button></li>
+            <li><button data-filter="codes" data-cursor="" class="btn"> Codes</button></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <ul class="projets_liste">
+            <li data-cat="editions" id="diabete" class="filterDiv" data-panel="diabete" data-cursor="">
+                <a href="#photo_diabete"></a>
+            </li>
+<!--            <li data-cat="evenementiels affiches editions" id="artoop" class="filterDiv" data-panel="artoop" data-cursor="">-->
+<!--                <a href="#photo_artoop">Artoop</a>-->
+<!--            </li>-->
+            <li data-cat="affiches evenementiels" id="etoiles_terrestre" class="filterDiv" data-panel="etoiles_terrestre" data-cursor="">
+                <a href="#photo_etoiles_terrestre"></a>
+            </li>
+            <li data-cat="editions" id="cira" class="filterDiv" data-panel="cira" data-cursor="">
+                <a href="#photo_cira"></a>
+            </li>
+            <li data-cat="editions" id="workshop" class="filterDiv" data-panel="workshop" data-cursor="">
+                <a href="#photo_workshop"></a>
+            </li>
+            <li data-cat="editions impressions illustrations" id="flux" class="filterDiv" data-panel="flux" data-cursor="">
+                <a href="#photo_flux"></a>
+            </li>
+            <li data-cat="motions_design" id="worlds_cocktails" class="filterDiv" data-panel="worlds_cocktails" data-cursor="">
+                <a href="#photo_worlds_cocktails"></a>
+            </li>
+            <li data-cat="editions" id="pop_icons" class="filterDiv" data-panel="pop_icons" data-cursor="">
+                <a href="#photo_pop_icons"></a>
+            </li>
+            <li data-cat="projets_perso" id="tdf" class="filterDiv" data-panel="tdf" data-cursor="">
+                <a href="#photo_tdf"></a>
+            </li>
+            <li data-cat="illustrations" id="licht_mehr_licht" class="filterDiv" data-panel="licht_mehr_licht" data-cursor="">
+                <a href="#photo_licht_mehr_licht"></a>
+            </li>
+            <li data-cat="impressions editions affiches codes" id="specimen_typo" class="filterDiv" data-panel="specimen_typo" data-cursor="">
+                <a href="#photo_specimen_typo"></a>
+            </li>
+            <li data-cat="affiches typographies" id="typo_g" class="filterDiv" data-panel="typo_g" data-cursor="">
+                <a href="#photo_typo_g"></a>
+            </li>
+            <li data-cat="editions" id="damasio" class="filterDiv" data-panel="damasio" data-cursor="">
+                <a href="#photo_damasio"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide" data-active-project="">
+        <a data-cursor="" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li id="mySidenav_about" class="sidenav" data-project="about">
+                <h1 class="about_titre">Hugo Gehl</h1>
+                <p class="about_explications">Né aux Pays-Bas puis de retour après quelques années en Lorraine, j’ai étudié quatres ans à LISAA Strasbourg
+                    pour obtenir un BTS Design Graphique imprimé puis un Bachelor de Designer Concepteur Graphique numérique et imprimé.
+                    Je construis mon univers autour de l’illustration, du street art et de la musique. J’ai une approche expérimentale des choses, j’aime sortir de ma zone de confort et mélanger les médiums.
+                    Photographie, informatique, peinture, pochoirs, collage et autres, pour explorer de nouvelles pistes afin d’accroître ma créativité.
+                    <br><br>J'ai également découvert lors de mon Bachelor un intérrêt pour le développement web. C'est pourquoi j'ai réalisé une formation de Développement web et mobile orienté Back-end à la Wild Code School
+                    où j'ai acquis les compétences et la logique pour pouvoir coder dans un language orienté objet et être capable de faire du développement continu.
+                    Je maitrise aujourd'hui PHP, Symfony, MySQL, HTML, CSS et d'autres encore.</p>
+                <p class="about_contact">Téléphone&thinsp;: 06 29 70 25 23<br>Mail&thinsp;: <a data-cursor="" class="lien_mail" href="mailTo.php">Écrivez moi ici</a></p>
+            </li>
+            <li id="mySidenav_diabete" class="sidenav" data-project="diabete">
+                <h1 class="slide_titre">Mes premiers jours à l'école en tant que diabétique</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;: Diabète, enfants, livre objet.</strong>
+                    <br><br><strong>Demande&thinsp;:</strong>
+                    <br><br><strong>Descriptif&thinsp;:</strong> Projet de diplôme fictif pour mon Bachelor.<br> </p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_diabete" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_diabete" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_diabete" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_diabete" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_diabete" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_diabete" class="filterDiv_slide six"></li>
+                        <li data-cursor="" id="photoseven_diabete" class="filterDiv_slide seven"></li>
+                        <li data-cursor="" id="photonine_diabete" class="filterDiv_slide nine"></li>
+                    </ul>
+                </div>
+                <div class="block photo_diabete_block"></div>
+            </li>
+<!--            <li id="mySidenav_artoop" class="sidenav" data-project="artoop">-->
+<!--                <h1 class="slide_titre">Artoop</h1>-->
+<!--                <p class="slide_explications">Notions&thinsp;: Street art, expositions.
+<br><br>Demande&thinsp;: Réaliser la communication visuel d'une galerie d'art qui s'implenterait au sein de la COOP lors de sa réhabilitation.
+<br><br>Descriptif&thinsp;: Projet de diplôme fictif pour mon BTS.<br>J'ai donc réalisé l'identité visuelle de la galerie d'art spécialisée dans le Street art nommée Artoop,
+l’évènementiel pour les expositions et ateliers ainsi qu’un catalogue d’exposition.<br>L'ensemble de mes visuels sont basés sur le lien que créé les deux « o »,
+la forme ainsi obtenue rappelle les liens qui seront présents au sein de la COOP entre les différentes personnes du quartier. Il y a également un rappel à la forme caractéristique arrondi d’un spray à la bombe.
+Les dégradés de couleurs vives sont également  typique des couleurs que l’on peut obtenir à l’aide d’une bombe de peinture. </p>-->
+<!--                <div class="container_slide">-->
+<!--                    <ul class="slide_liste">-->
+<!--                        <li data-cursor="" id="photoone_artoop" class="filterDiv_slide one">-->
+<!--                        </li>-->
+<!--                        <li data-cursor="" id="phototwo_artoop" class="filterDiv_slide two">-->
+<!--                        </li>-->
+<!--                        <li data-cursor="" id="photothree_artoop" class="filterDiv_slide three">-->
+<!--                        </li>-->
+<!--                        <li data-cursor="" id="photofour_artoop" class="filterDiv_slide four">-->
+<!--                        </li>-->
+<!--                        <li data-cursor="" id="photofive_artoop" class="filterDiv_slide five">-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="photo_artoop_block" id="photo_block"></div>-->
+<!--            </li>-->
+            <li id="mySidenav_etoiles_terr" class="sidenav" data-project="etoiles_terrestre">
+                <h1 class="slide_titre">Étoiles terrestre</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Verre, cristal, morphoses, reflets.
+                    <br><br><strong>Demande&thinsp;:</strong> Réaliser la communication visuelle pour le Festival Étoiles Terrestre organisé par la cristallerie Saint-Louis, le site verrier de Meisenthal et le musée Lalique.
+                    <br><br><strong>Descriptif&thinsp;:</strong> En groupe de quatre nous avons simulé un travail en agence, ainsi, chacun s'est occupé d'un pôle graphique (identité visuelle, évènementiel, édition et signalétique).
+                    Pour ma part je me suis occupé de l'évènementiel. J'ai créé un principe d'ensemble, quatre affiches entourées de quatre cadres différents, une pour chaque évènement du festival
+                    (Projection, concert, ateliers et expositions). Celui-ci est accompagné d’une affiche globale, donnant toutes les informations !
+                    <br>Un programme vient compléter en apportant les informations importantes et en mettant en valeur les productions des musées. <br>Goodies&thinsp;: Poster encarté dans le programme, Sous bocks.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_etoiles_terr" class="filterDiv_slide one">
+                        </li>
+                        <li data-cursor="" id="phototwo_etoiles_terr" class="filterDiv_slide two">
+                        </li>
+                        <li data-cursor="" id="photothree_etoiles_terr" class="filterDiv_slide three">
+                        </li>
+                        <li data-cursor="" id="photofour_etoiles_terr" class="filterDiv_slide four">
+                        </li>
+                        <li data-cursor="" id="photofive_etoiles_terr" class="filterDiv_slide five">
+                        </li>
+                        <li data-cursor="" id="photosix_etoiles_terr" class="filterDiv_slide six">
+                        </li>
+                        <li data-cursor="" id="photoseven_etoiles_terr" class="filterDiv_slide seven">
+                        </li>
+                        <li data-cursor="" id="photoeight_etoiles_terr" class="filterDiv_slide eight">
+                        </li>
+                        <li data-cursor="" id="photonine_etoiles_terr" class="filterDiv_slide nine">
+                        </li>
+                        <li data-cursor="" id="phototen_etoiles_terr" class="filterDiv_slide ten">
+                        </li>
+                        <li data-cursor="" id="photoeleven_etoiles_terr" class="filterDiv_slide eleven">
+                        </li>
+                    </ul>
+                </div>
+                <div class="block photo_etoiles_terr_block"></div>
+            </li>
+            <li id="mySidenav_cira" class="sidenav" data-project="cira">
+                <h1 class="slide_titre">CIRA</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Danse, livre objet.
+                    <br><br><strong>Demande&thinsp;:</strong> Réalisation d’une édition pour l’association le Cira (Strasbourg), afin qu’ils puissent présenter leur association ainsi que leurs stages d’été à leurs futurs actionnaires.
+                    <br><br><strong>Descriptif&thinsp;:</strong> Réalisation d'un système de pictogrammes symbolisant les différentes danses, recensées dans un "nuancier" de formes. Ainsi que de deux carnets &thinsp;: un sur l’historique
+                    de l’association, l’autre sur les différents intervenants des stages.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_cira" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_cira" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_cira" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_cira" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_cira" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_cira" class="filterDiv_slide six"></li>
+                        <li data-cursor="" id="photoseven_cira" class="filterDiv_slide seven"></li>
+                        <li data-cursor="" id="photoeight_cira" class="filterDiv_slide eight"></li>
+                        <li data-cursor="" id="photonine_cira" class="filterDiv_slide nine"></li>
+                    </ul>
+                </div>
+                <div class="block photo_cira_block"></div>
+            </li>
+            <li id="mySidenav_workshop" class="sidenav" data-project="workshop">
+                <h1 class="slide_titre">Workshop</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Coeur, journalisme.
+                    <br><br><strong>Demande&thinsp;:</strong> Lors d'un workshop nous avions le projet de laisser une trace à travers une édition de tous les travaux réalisés pendant la semaine.
+                    <br><br><strong>Descriptifs&thinsp;:</strong> Avec une équipe de photographes, reportaires et graphistes, nous avons réalisé un livre contenant un récapitulatif jour par jour de cet semaine.
+                    Depuis la réception des sujet, en passant par les phases de recherches, jusqu'à la réalisation dans l'espace du final de chaques groupes.
+                    On retrouve donc une trace avec des photographies et descriptifs de tous ce qui a était fait durant cette semaine de workshop sur le thème du coeur.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste contourWorkshop">
+                        <li data-cursor="" id="photoone_workshop" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_workshop" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_workshop" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_workshop" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_workshop" class="filterDiv_slide five"></li>
+                    </ul>
+                </div>
+                <div class="block photo_workshop_block"></div>
+            </li>
+            <li id="mySidenav_flux" class="sidenav" data-project="flux">
+                <h1 class="slide_titre">Flux</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Flux, évolution, érosion.
+                    <br><br><strong>Demande&thinsp;:</strong> Réaliser une affiche récto/verso en sérigraphie.
+                    <br><br><strong>Descriptif&thinsp;:</strong> En groupe de huit nous avons chacun réaliser notre affiche, pour ensuite les encarter ensemble et réaliser une édition dans laquelle chaque illustration répond à une autre.
+                    L'intérêt est le dialogue entre deux illustrations qui n'étaient pas pensées pour être ensemble, mais le sont et se répondent plus ou moins bien.
+                    C'est l'aléatoire de cette encartement qui est intéressant.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_flux" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_flux" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_flux" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_flux" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_flux" class="filterDiv_slide five"></li>
+                    </ul>
+                </div>
+                <div class="block photo_flux_block"></div>
+            </li>
+            <li id="mySidenav_worlds_cocktails" class="sidenav" data-project="worlds_cocktails">
+                <h1 class="video_titre">World's cocktails</h1>
+                <p class="video_explications"><strong>Notions&thinsp;:</strong> Cocktails, tutoriel, recette.
+                    <br><br><strong>Demande&thinsp;:</strong> Réaliser une vidéo en motion design, expliquant la réalisation d'un cocktails choisi.
+                    <br><br><strong>Descriptif&thinsp;:</strong> Tutoriel vidéo expliquant la recette et la façon de faire un sex on the beach.</p>
+                <div class="photo_worlds_cocktails_block">
+                    <div class="video-container">
+                        <video class="video" width="1280" height="720" controls>
+                            <source src="https://hugogehl.github.io/website/vidéos/Worlds_cocktail.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </li>
+            <li id="mySidenav_pop_icons" class="sidenav" data-project="pop_icons">
+                <h1 class="slide_titre">Pop Icons</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Exubérance, musique, pop culture.
+                    <br><br><strong>Demande&thinsp;:</strong> Réalisation d’un magazine autour de la pop culture, de ses stars et de l’exubérance.
+                    <br><br><strong>Descriptif&thinsp;:</strong> Travail de mise en page et traitements graphique sur un papier nacré.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_pop_icons" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_pop_icons" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_pop_icons" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_pop_icons" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_pop_icons" class="filterDiv_slide five"></li>
+                    </ul>
+                </div>
+                <div class="block photo_pop_icons_block"></div>
+            </li>
+            <li id="mySidenav_tdf" class="sidenav" data-project="tdf">
+                <h1 class="slide_titre">Tour de France 2017</h1>
+                <p class="slide_explications"><strong>Descriptif&thinsp;:</strong> Photographies réalisées lors de mon stage à la Mairie de Longwy. Durant cette journée j’étais photographe pour la ville.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_tdf" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_tdf" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_tdf" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_tdf" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_tdf" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_tdf" class="filterDiv_slide five"></li>
+                    </ul>
+                </div>
+                <div class="block photo_tdf_block"></div>
+            </li>
+            <li id="mySidenav_licht_mehr_licht" class="sidenav" data-project="licht_mehr_licht">
+                <h1 class="slide_titre">Licht Mehr Licht</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Ombres et lumières, noir et blanc.
+                    <br><br><strong>Demande&thinsp;:</strong> Réalisations de planches de BD à partir de la sitation «&thinsp;Lumières plus de lumières&thinsp;».
+                    <br><br><strong>Descriptif&thinsp;:</strong> Dans un paysage post-apocalyptique l’héroine part de son village vers la ville à la recherche de son oncle.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_licht_mehr_licht" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_licht_mehr_licht" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_licht_mehr_licht" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_licht_mehr_licht" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_licht_mehr_licht" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_licht_mehr_licht" class="filterDiv_slide six"></li>
+                        <li data-cursor="" id="photoseven_licht_mehr_licht" class="filterDiv_slide seven"></li>
+                        <li data-cursor="" id="photoeight_licht_mehr_licht" class="filterDiv_slide eight"></li>
+                    </ul>
+                </div>
+                <div class="block photo_licht_mehr_licht_block"></div>
+            </li>
+            <li id="mySidenav_spec_typo" class="sidenav" data-project="specimen_typo">
+                <h1 class="slide_titre">Spécimen Typographique</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Code, spécimen typographique.
+                    <br><br><strong>Demande&thinsp;:</strong> Réalisation d'un spécimen typographique, en utilisant la découpeuse graveuse laser.
+                    <br><br><strong>Descriptif&thinsp;:</strong> J'ai choisi de faire un spéciment typographique sur la typographie Resistance de Velvetine.
+                    Le «&thinsp;i&thinsp;» minuscule est intéressant et mon projet est pensé autour de lui, le format de mon affiche et du livret en découle. L'affiche a été entièrement réalisé en code HTML et CSS.
+                    Ce code est le contenu de la petite édition accompagnant l'affiche. Les deux ont été réalisé entièrement en découpe et gravure laser.
+                    <br><br>L'affiche est inspirée du visuel de l'affiche de l'influx réalisé par graphéine.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_spec_typo" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_spec_typo" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_spec_typo" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_spec_typo" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_spec_typo" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_spec_typo" class="filterDiv_slide six"></li>
+                        <li data-cursor="" id="photoseven_spec_typo" class="filterDiv_slide seven"></li>
+                        <li data-cursor="" id="photoeight_spec_typo" class="filterDiv_slide eight"></li>
+                        <li data-cursor="" id="photonine_spec_typo" class="filterDiv_slide nine"></li>
+                        <li data-cursor="" id="phototen_spec_typo" class="filterDiv_slide ten"></li>
+                        <li data-cursor="" id="photoelewen_spec_typo" class="filterDiv_slide elewen"></li>
+                    </ul>
+                </div>
+                <div class="block photo_spec_typo_block"></div>
+            </li>
+            <li id="mySidenav_typo_g" class="sidenav" data-project="typo_g">
+                <h1 class="slide_titre">Typo G3</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Typographies, Piège à encre.
+                    <br><br><strong>Demande&thinsp;:</strong> Réaliser une typograhie et sa variante, en les travaillants sur le logiciel glyphes.
+                    <br><br><strong>Descriptif&thinsp;:</strong> La variante de cette typographie s'inspire du principe de piège à encre et où l'on vient jouer avec.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste contourTypoG">
+                        <li data-cursor="" id="photoone_typo_g" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_typo_g" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_typo_g" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_typo_g" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_typo_g" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_typo_g" class="filterDiv_slide five"></li>
+                    </ul>
+                </div>
+                <div class="block photo_typo_g_block"></div>
+            </li>
+            <li id="mySidenav_damasio" class="sidenav" data-project="damasio">
+                <h1 class="slide_titre">Damasio</h1>
+                <p class="slide_explications"><strong>Notions&thinsp;:</strong> Reccueil de nouvelles, Transmissions, Messages.
+                    <br><br><strong>Demande&thinsp;:</strong> Réaliser une édition à partir du reccueil de nouvelles de Alain Damasio.
+                    <br><br><strong>Descriptif&thinsp;:</strong> Séléction de trois nouvelles autour du thème de la transmissions de messages, qu'ils soient oraux, lumineux ou sonnore.
+                    Entre deux nouvelles, un dossier de photographies illustrants les messages des nouvelles.</p>
+                <div class="container_slide">
+                    <ul class="slide_liste">
+                        <li data-cursor="" id="photoone_damasio" class="filterDiv_slide one"></li>
+                        <li data-cursor="" id="phototwo_damasio" class="filterDiv_slide two"></li>
+                        <li data-cursor="" id="photothree_damasio" class="filterDiv_slide three"></li>
+                        <li data-cursor="" id="photofour_damasio" class="filterDiv_slide four"></li>
+                        <li data-cursor="" id="photofive_damasio" class="filterDiv_slide five"></li>
+                        <li data-cursor="" id="photosix_damasio" class="filterDiv_slide six"></li>
+                        <li data-cursor="" id="photoseven_damasio" class="filterDiv_slide seven"></li>
+                        <li data-cursor="" id="photoeight_damasio" class="filterDiv_slide eight"></li>
+                        <li data-cursor="" id="photonine_damasio" class="filterDiv_slide nine"></li>
+                    </ul>
+                </div>
+                <div class="block photo_damasio_block"></div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
+
+    </body>
+</html>
