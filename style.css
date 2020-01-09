@@ -179,6 +179,7 @@
     top: 33px;
     font-size: 35px;
     z-index: 2;
+    mix-blend-mode: difference;
 }
 
 /*Slide header*/
