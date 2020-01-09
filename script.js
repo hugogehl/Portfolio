@@ -69,10 +69,10 @@ function licht_mehr_licht() {
     bg.style.backgroundImage = "url(images/bd/bd_1.jpg)";
 }
 
-document.getElementById("specimen_typo").onmouseover = function() {specimen_typo()};
-function specimen_typo() {
-    bg.style.backgroundImage = "url(images/specTypo/spec_1.jpg)";
-}
+// document.getElementById("specimen_typo").onmouseover = function() {specimen_typo()};
+// function specimen_typo() {
+//    bg.style.backgroundImage = "url(images/specTypo/spec_1.jpg)";
+//}
 
 document.getElementById("typo_g").onmouseover = function() {typo_g()};
 function typo_g() {
@@ -373,62 +373,62 @@ function licht_mehr_licht_photo_eight() {
 }
 
 //Photo over sur slide spéc typo
-let photo_spec_typo_block = document.querySelector('.photo_spec_typo_block');
+// let photo_spec_typo_block = document.querySelector('.photo_spec_typo_block');
 
-document.getElementById("photoone_spec_typo").onmouseover = function() {specimen_typo_photo_one()};
-function specimen_typo_photo_one() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_1.jpg)";
-}
+// document.getElementById("photoone_spec_typo").onmouseover = function() {specimen_typo_photo_one()};
+// function specimen_typo_photo_one() {
+//    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_1.jpg)";
+// }
 
-document.getElementById("phototwo_spec_typo").onmouseover = function() {specimen_typo_photo_two()};
-function specimen_typo_photo_two() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_2.jpg)";
-}
+// document.getElementById("phototwo_spec_typo").onmouseover = function() {specimen_typo_photo_two()};
+// function specimen_typo_photo_two() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_2.jpg)";
+// }
 
-document.getElementById("photothree_spec_typo").onmouseover = function() {specimen_typo_photo_three()};
-function specimen_typo_photo_three() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_3.jpg)";
-}
+// document.getElementById("photothree_spec_typo").onmouseover = function() {specimen_typo_photo_three()};
+// function specimen_typo_photo_three() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_3.jpg)";
+// }
 
-document.getElementById("photofour_spec_typo").onmouseover = function() {specimen_typo_photo_four()};
-function specimen_typo_photo_four() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_4.jpg)";
-}
+// document.getElementById("photofour_spec_typo").onmouseover = function() {specimen_typo_photo_four()};
+// function specimen_typo_photo_four() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_4.jpg)";
+// }
 
-document.getElementById("photofive_spec_typo").onmouseover = function() {specimen_typo_photo_five()};
-function specimen_typo_photo_five() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_5.jpg)";
-}
+// document.getElementById("photofive_spec_typo").onmouseover = function() {specimen_typo_photo_five()};
+// function specimen_typo_photo_five() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_5.jpg)";
+// }
 
-document.getElementById("photosix_spec_typo").onmouseover = function() {specimen_typo_photo_six()};
-function specimen_typo_photo_six() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_6.jpg)";
-}
+// document.getElementById("photosix_spec_typo").onmouseover = function() {specimen_typo_photo_six()};
+// function specimen_typo_photo_six() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_6.jpg)";
+// }
 
-document.getElementById("photoseven_spec_typo").onmouseover = function() {specimen_typo_photo_seven()};
-function specimen_typo_photo_seven() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_7.jpg)";
-}
+// document.getElementById("photoseven_spec_typo").onmouseover = function() {specimen_typo_photo_seven()};
+// function specimen_typo_photo_seven() {
+//    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_7.jpg)";
+// }
 
-document.getElementById("photoeight_spec_typo").onmouseover = function() {specimen_typo_photo_eight()};
-function specimen_typo_photo_eight() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_8.jpg)";
-}
+// document.getElementById("photoeight_spec_typo").onmouseover = function() {specimen_typo_photo_eight()};
+// function specimen_typo_photo_eight() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_8.jpg)";
+// }
 
-document.getElementById("photonine_spec_typo").onmouseover = function() {specimen_typo_photo_nine()};
-function specimen_typo_photo_nine() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_9.jpg)";
-}
+// document.getElementById("photonine_spec_typo").onmouseover = function() {specimen_typo_photo_nine()};
+// function specimen_typo_photo_nine() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_9.jpg)";
+// }
 
-document.getElementById("phototen_spec_typo").onmouseover = function() {specimen_typo_photo_ten()};
-function specimen_typo_photo_ten() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_10.jpg)";
-}
+// document.getElementById("phototen_spec_typo").onmouseover = function() {specimen_typo_photo_ten()};
+// function specimen_typo_photo_ten() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_10.jpg)";
+// }
 
-document.getElementById("photoelewen_spec_typo").onmouseover = function() {specimen_typo_photo_elewen()};
-function specimen_typo_photo_elewen() {
-    photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_11.jpg)";
-}
+// document.getElementById("photoelewen_spec_typo").onmouseover = function() {specimen_typo_photo_elewen()};
+// function specimen_typo_photo_elewen() {
+//     photo_spec_typo_block.style.backgroundImage = "url(images/specTypo/spec_11.jpg)";
+// }
 
 //Photo over sur slide tdf
 let photo_tdf_block = document.querySelector('.photo_tdf_block');
