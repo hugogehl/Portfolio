@@ -46,7 +46,7 @@ function workshop() {
 
 document.getElementById("flux").onmouseover = function() {flux()};
 function flux() {
-    bg.style.backgroundImage = "url(images/flux/flux_1.jpeg)";
+    bg.style.backgroundImage = "url(images/flux/flux_1.jpg)";
 }
 
 document.getElementById("worlds_cocktails").onmouseover = function() {worlds_cocktails()};
@@ -278,17 +278,17 @@ let photo_flux_block = document.querySelector('.photo_flux_block');
 
 document.getElementById("photoone_flux").onmouseover = function() {flux_photo_one()};
 function flux_photo_one() {
-    photo_flux_block.style.backgroundImage = "url(images/flux/flux_1.jpeg)";
+    photo_flux_block.style.backgroundImage = "url(images/flux/flux_1.jpg)";
 }
 
 document.getElementById("phototwo_flux").onmouseover = function() {flux_photo_two()};
 function flux_photo_two() {
-    photo_flux_block.style.backgroundImage = "url(images/flux/flux_2.jpeg)";
+    photo_flux_block.style.backgroundImage = "url(images/flux/flux_2.jpg)";
 }
 
 document.getElementById("photothree_flux").onmouseover = function() {flux_photo_three()};
 function flux_photo_three() {
-    photo_flux_block.style.backgroundImage = "url(images/flux/flux_3.jpeg)";
+    photo_flux_block.style.backgroundImage = "url(images/flux/flux_3.jpg)";
 }
 
 document.getElementById("photofour_flux").onmouseover = function() {flux_photo_four()};
@@ -298,7 +298,7 @@ function flux_photo_four() {
 
 document.getElementById("photofive_flux").onmouseover = function() {flux_photo_five()};
 function flux_photo_five() {
-    photo_flux_block.style.backgroundImage = "url(images/flux/flux_5.jpeg)";
+    photo_flux_block.style.backgroundImage = "url(images/flux/flux_5.jpg)";
 }
 
 //Photo over sur slide pop icons
